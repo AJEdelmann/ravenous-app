@@ -15,7 +15,7 @@ class Business extends React.Component {
     const { business } = this.props;
     return (
       // https://maps.google.com/?q=term
-
+      <a class="business-link-wrap" href={business.url} target='_blank'>
       <div className="Business">
         <div className="image-container">
           <img src={business.imageSrc} alt="" />
@@ -37,6 +37,7 @@ class Business extends React.Component {
           </div>
         </div>
       </div>
+      </a>
     );
   }
 }
